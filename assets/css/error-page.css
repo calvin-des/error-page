@@ -1,0 +1,169 @@
+.site-error-body {
+    margin: 0;
+    min-height: 100vh;
+    background: #111827;
+}
+
+.site-error-page,
+.site-error-page * {
+    box-sizing: border-box;
+}
+
+.site-error-page {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #111827;
+    color: #fff;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.site-error-copy {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.site-error-title {
+    margin: 0 0 1rem;
+    color: #fff;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 0.95;
+    letter-spacing: 0;
+}
+
+.site-error-copy p {
+    margin: 0.5rem 0;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+
+.site-error-link {
+    color: #06b6d4;
+    text-decoration: none;
+    border-bottom: 0.2rem solid transparent;
+    transition: border-color 160ms ease, color 160ms ease;
+}
+
+.site-error-link:hover,
+.site-error-link:focus-visible {
+    color: #06b6d4;
+    border-bottom-color: #06b6d4;
+    outline: none;
+}
+
+.site-error-page [data-site-error-visual] {
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.site-error-visual {
+    display: block;
+    width: 100%;
+    height: min(64vh, 720px);
+    min-height: 360px;
+    overflow: visible;
+    background: #374151;
+}
+
+.site-error-ridge {
+    fill: #4b5563;
+    stroke: #1f2937;
+}
+
+.site-error-skyline,
+.site-error-ground {
+    fill: #111827;
+}
+
+.site-error-haze {
+    fill: #1f2937;
+}
+
+.site-error-code {
+    fill: #6b7280;
+    font-size: 660px;
+    font-weight: 800;
+    filter: drop-shadow(0 0 50px #1f2937);
+}
+
+.site-error-cactus path:nth-child(1) {
+    fill: #0e7490;
+}
+
+.site-error-cactus path:nth-child(2) {
+    fill: #155e75;
+}
+
+.site-error-cactus path:nth-child(3) {
+    fill: #000;
+}
+
+.site-error-parallax {
+    will-change: transform;
+}
+
+.site-error-actions {
+    display: flex;
+
+    /* flex-wrap: wrap */
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+}
+
+.site-error-action {
+    min-width: 150px;
+    font-weight: 500;
+}
+
+@media (max-width: 575.98px) {
+    .site-error-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-error-action {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    .site-error-title {
+        font-size: 2.9rem;
+    }
+
+    .site-error-copy {
+        margin-top: 1.5rem;
+    }
+
+    .site-error-copy p {
+        font-size: 1rem;
+    }
+
+    .site-error-visual {
+        height: 19vh;
+        min-height: 120px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .site-error-link {
+        transition: none;
+    }
+
+    .site-error-parallax {
+        will-change: auto;
+    }
+}
